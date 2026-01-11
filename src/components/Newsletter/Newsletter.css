@@ -1,0 +1,143 @@
+/* Newsletter Section */
+.newsletter {
+  background: linear-gradient(180deg, #0b2626 0%, #0d0d0b 100%);
+  padding: 6rem 8%;
+  color: #e8d5b7;
+  position: relative;
+}
+
+.newsletter::before,
+.newsletter::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(201, 169, 97, 0.3);
+}
+
+.newsletter::before {
+  top: 0;
+}
+
+.newsletter::after {
+  bottom: 0;
+}
+
+.newsletter-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newsletter-kicker {
+  color: #c9a961;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.newsletter h2 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.newsletter p {
+  max-width: 900px;
+  margin: 0 auto 2.5rem;
+  color: #d8c8a8;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.newsletter-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: stretch;
+  max-width: 1100px;
+  margin: 0 auto 1rem;
+}
+
+.newsletter input {
+  padding: 1.1rem 1.25rem;
+  border: 2px solid #c9a961;
+  background: transparent;
+  color: #f1e8d7;
+  font-size: 1rem;
+  border-radius: 3px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.newsletter input::placeholder {
+  color: #b8b8b8;
+}
+
+.newsletter input:focus {
+  outline: none;
+  border-color: #f1e8d7;
+  box-shadow: 0 0 0 3px rgba(201, 169, 97, 0.25);
+}
+
+.newsletter button {
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.4s ease;
+  border-radius: 3px;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  padding: 1.1rem 2.25rem;
+  background: #c9a961;
+  border: 2px solid #c9a961;
+  color: #1a1410;
+  align-self: stretch;
+}
+
+.newsletter button:hover {
+  background: transparent;
+  color: #c9a961;
+  transform: scale(1.05);
+  box-shadow: inset 0 0 0 2px #c9a961;
+}
+
+.newsletter small {
+  display: block;
+  margin-top: 0.5rem;
+  color: #9ea099;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .newsletter {
+    padding: 5rem 6%;
+  }
+
+  .newsletter h2 {
+    font-size: 3rem;
+  }
+
+  .newsletter-form {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .newsletter {
+    padding: 4rem 6%;
+  }
+
+  .newsletter h2 {
+    font-size: 2.6rem;
+  }
+}

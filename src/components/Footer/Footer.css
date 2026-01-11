@@ -1,0 +1,145 @@
+/* Footer */
+.footer {
+  background: #100a05;
+  color: #d9d1c0;
+  padding: 5rem 8% 3.5rem;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(201, 169, 97, 0.3);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.footer-column h3 {
+  color: #c9a961;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.footer-column p {
+  margin: 0 0 0.5rem;
+  color: #d9d1c0;
+  line-height: 1.6;
+}
+
+.status {
+  margin: 1rem 0;
+  color: #d9d1c0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status .dot {
+  width: 10px;
+  height: 10px;
+  background: #17c964;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.muted {
+  color: #a6a08f;
+}
+
+.hours {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #cfc7b3;
+  line-height: 1.8;
+}
+
+.hours li {
+  margin-bottom: 0.35rem;
+}
+
+.hours strong {
+  font-weight: 700;
+  color: #d9d1c0;
+}
+
+.footer-links {
+  display: grid;
+  gap: 0.8rem;
+  text-align: left;
+}
+
+.footer-links a,
+.footer-legal a {
+  text-decoration: none;
+  color: #d9d1c0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover,
+.footer-legal a:hover {
+  color: #c9a961;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-bottom button {
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.4s ease;
+  border-radius: 3px;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0.9rem 1.6rem;
+  background: transparent;
+  border: 2px solid #c9a961;
+  color: #c9a961;
+}
+
+.footer-bottom button:hover {
+  background: #c9a961;
+  color: #100a05;
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(201, 169, 97, 0.4);
+}
+
+.footer-legal {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 4rem 6% 3rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

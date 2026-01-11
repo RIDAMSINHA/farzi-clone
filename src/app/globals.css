@@ -1,42 +1,95 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import '../styles/variables.css';
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
 body {
-  max-width: 100vw;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  color: #2c2c2c;
+  line-height: 1.6;
   overflow-x: hidden;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Global Section Styles */
+.section {
+  padding: 7rem 8%;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.section-title {
+  color: #c9a961;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.section h2 {
+  font-size: 2.8rem;
+  margin: 1.5rem 0;
+  font-weight: 400;
+  color: #1a1410;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.section > p {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  color: #5a5a5a;
+  line-height: 1.8;
+}
+
+/* Global Grid & Card Styles */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.card {
+  background: white;
+  padding: 3rem;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 2px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #1a1410;
+  font-weight: 500;
+}
+
+.card p {
+  color: #5a5a5a;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .section {
+    padding: 5rem 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section h2 {
+    font-size: 2rem;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
