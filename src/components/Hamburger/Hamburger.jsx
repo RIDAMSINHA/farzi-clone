@@ -2,10 +2,11 @@
 
 import { useEffect, useState } from 'react';
 import './Hamburger.css';
+import Logo from '@/components/Logo/Logo';
 
 const menuItems = [
   "What's On",
-  'Bottomless – Sunday Brunch',
+  'Bottomless - Sunday Brunch',
   'Group Dining',
   'Theatre Menu',
   'Lunch Thali Menu',
@@ -42,7 +43,9 @@ export default function Hamburger() {
       </button>
 
       <div className={`menu-overlay ${menuOpen ? 'open' : ''}`}>
-        <div className="menu-logo-mark">F</div>
+        <div className="menu-logo-mark">
+          <Logo />
+        </div>
         <ul className="menu-links">
           {menuItems.map((item) => (
             <li key={item} onClick={() => setMenuOpen(false)}>{item}</li>

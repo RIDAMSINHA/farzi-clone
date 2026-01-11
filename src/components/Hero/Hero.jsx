@@ -1,5 +1,5 @@
 import './Hero.css';
-
+import Logo from '@/components/Logo/Logo';
 
 export default function Hero() {
   return (
@@ -11,10 +11,13 @@ export default function Hero() {
       <div className="hero-overlay" />
 
       <div className="hero-inner">
-        <div className="logo-mark">F</div>
+        <div className="logo-mark">
+          <Logo />
+        </div>
+
         <div className="hero-content">
           <h1>
-            <span>Farzi London – Modern Indian</span>
+            <span>Farzi London - Modern Indian</span>
             <span>Restaurant</span>
           </h1>
         </div>

@@ -1,6 +1,6 @@
 /* Private Hire Section */
 .private-hire-section {
-  background: #1a3a3a;
+  background : linear-gradient(#0b2626 0%, #0d0d0b 100%);
   padding: 0;
   position: relative;
 }
@@ -57,7 +57,7 @@
 .private-hire-content .section-title {
   color: #c9a961;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 0.45em;
   font-size: 0.85rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
@@ -83,7 +83,7 @@
   font-weight: 600;
   transition: all 0.4s ease;
   border-radius: 2px;
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: "Outfit",sans-serif;
   font-size: 0.9rem;
   letter-spacing: 1px;
   text-transform: capitalize;

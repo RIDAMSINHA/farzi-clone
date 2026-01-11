@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+
 /* Destinations Section */
 .destinations {
-  background: #1a4040;
+  background : linear-gradient(#0b2626 0%, #0d0d0b 100%);
   padding: 0;
   position: relative;
 }
@@ -32,15 +34,42 @@
   max-width: 1600px;
   margin: 0 auto;
 }
+.heading-text {
+  font-size: 2.25rem;      /* text-4xl */
+  line-height: 2.5rem;
+  font-weight: 600;        /* font-semibold */
+  color: #f5f5f5;          /* text-light (approx Tailwind light) */
+  text-wrap: pretty;       /* text-pretty */
+}
+.heading-text h2 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+}
+@media (min-width: 640px) {
+  .heading-text {
+    font-size: 3rem;       /* sm:text-5xl */
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading-text {
+    font-size: 3.75rem;    /* lg:text-6xl */
+    line-height: 1;
+  }
+}
+
 
 .destinations-content {
-  color: white;
+  color: #d3c9af;
+  width: 630px;
 }
 
 .destinations-content .section-title {
   color: #c9a961;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  /* letter-spacing: 3px; */
+  letter-spacing: 0.45em;
   font-size: 0.75rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
@@ -49,17 +78,18 @@
 .destinations-content h2 {
   font-size: 3.5rem;
   margin-bottom: 1.5rem;
-  font-weight: 400;
-  color: #f5f5f5;
+  font-weight: 700;
+  color: #d3c9af;
   line-height: 1.15;
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: "Outfit",sans-serif;
 }
 
 .destinations-content > p {
   font-size: 1.05rem;
-  color: #b8c5c5;
-  line-height: 1.75;
+  color: #96948c;
+  line-height: 1.77;
   margin-bottom: 3rem;
+  letter-spacing: 0.04rem;
 }
 
 .destination-item {
@@ -71,13 +101,14 @@
   margin-bottom: 1rem;
   font-weight: 600;
   color: #ffffff;
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: "Outfit",sans-serif;
 }
 
 .destination-item p {
   font-size: 1rem;
-  color: #b8c5c5;
-  line-height: 1.7;
+  color: #96948c;
+  line-height: 1.77;
+  letter-spacing: 0.04rem;
 }
 
 .destination-buttons {
@@ -100,7 +131,7 @@
   transition: all 0.3s ease;
   border-radius: 0;
   white-space: nowrap;
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: "Outfit",sans-serif;
 }
 
 .destination-buttons button:hover {

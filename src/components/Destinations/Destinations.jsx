@@ -6,15 +6,18 @@ export default function Destinations() {
       <div className="destinations-container">
         <div className="destinations-content">
           <div className="section-title">Farzi Destinations</div>
+          <div className="heading-text">
           <h2>Two Destinations. One Legacy.</h2>
+          </div>
           <p>
             Rooted in the vision of legendary gastronome Jiggs Kalra, Farzi is a modern
             Indian restaurant in London, bringing its signature pan-Indian innovation
-            to two distinctive city locations.
+            to 
+            two distinctive city locations.
           </p>
 
           <div className="destination-item">
-            <h3>Farzi London – Haymarket</h3>
+            <h3>Farzi London - Haymarket</h3>
             <p>
               Just steps from Piccadilly Circus, our flagship Indian restaurant in
               London offers an immersive dining experience where tradition meets
@@ -27,7 +30,7 @@ export default function Destinations() {
             <p>
               In the vibrant energy of Londons riverside Boxhall, Farzi finds a
               second home. The same bold Indian flavours, reinterpreted in a lively,
-              modern setting.
+              modern setting - perfect for those seeking a unique Indian restaurant in London.
             </p>
           </div>
 

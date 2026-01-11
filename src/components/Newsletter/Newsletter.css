@@ -33,7 +33,7 @@
 .newsletter-kicker {
   color: #c9a961;
   text-transform: uppercase;
-  letter-spacing: 6px;
+  letter-spacing: 0.45em;
   font-size: 0.85rem;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -88,7 +88,7 @@
   font-weight: 600;
   transition: all 0.4s ease;
   border-radius: 3px;
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: "Outfit",sans-serif;
   font-size: 0.9rem;
   letter-spacing: 1px;
   text-transform: capitalize;

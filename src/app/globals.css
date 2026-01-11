@@ -1,4 +1,4 @@
-@import '../styles/variables.css';
+
 
 /* Global Styles */
 * {
@@ -8,7 +8,8 @@
 }
 
 body {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  /* font-family: 'Cormorant Garamond', Georgia, serif; */
+  font-family: "Outfit",sans-serif;
   color: #2c2c2c;
   line-height: 1.6;
   overflow-x: hidden;
