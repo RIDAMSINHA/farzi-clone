@@ -92,13 +92,14 @@
 }
 
 .about-image {
-  background: linear-gradient(135deg, #8b6914, #c9a961);
-  background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800');
+  /* background: linear-gradient(135deg, #8b6914, #c9a961); */
+  background-image: url('/images/Image3.png');
   background-size: cover;
   background-position: center;
   min-height: 500px;
   border-radius: 2px;
   position: relative;
+  border: 3px solid #70644a;
 }
 
 .about-image::before {

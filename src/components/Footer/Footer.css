@@ -2,7 +2,8 @@
 .footer {
   background: #100a05;
   color: #d9d1c0;
-  padding: 5rem 8% 3.5rem;
+  padding: 5rem 8% 2rem;
+  margin-bottom: 60px;
   position: relative;
 }
 
@@ -129,8 +130,8 @@
 
 .footer-legal {
   display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+  gap: 0.5rem;
+  flex-direction: column;
 }
 
 @media (max-width: 768px) {

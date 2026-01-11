@@ -118,3 +118,91 @@
   color: #c9a961;
   transform: translateY(-2px);
 }
+
+.menu-voucher-btn {
+  margin-top: 2rem;
+  padding: 0.9rem 1.8rem;
+  border: 2px solid #c9a961;
+  background: transparent;
+  color: #c9a961;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+  border-radius: 2px;
+  font-family: "Outfit", sans-serif;
+}
+
+.menu-voucher-btn:hover {
+  background: #c9a961;
+  color: #1a1410;
+  transform: scale(1.05);
+}
+
+.menu-footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 3rem;
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+}
+
+.menu-footer-links li {
+  font-size: 0.8rem;
+  color: #96948c;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+.menu-footer-links li:hover {
+  color: #c9a961;
+}
+
+.menu-voucher-btn {
+  margin-top: 2rem;
+  padding: 0.9rem 1.8rem;
+  border: 2px solid #c9a961;
+  background: transparent;
+  color: #c9a961;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+  border-radius: 2px;
+  font-family: "Outfit", sans-serif;
+}
+
+.menu-voucher-btn:hover {
+  background: #c9a961;
+  color: #1a1410;
+  transform: scale(1.05);
+}
+
+.menu-footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 3rem;
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+}
+
+.menu-footer-links li {
+  font-size: 0.8rem;
+  color: #96948c;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+.menu-footer-links li:hover {
+  color: #c9a961;
+}

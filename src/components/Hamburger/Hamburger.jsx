@@ -14,6 +14,13 @@ const menuItems = [
   'Farzi @ Boxhall',
   'Reservations',
   'Delivery',
+  'Philosophy',
+  'Contact',
+];
+
+const footerLinks = [
+  'Privacy Policy',
+  'Terms & Conditions',
 ];
 
 export default function Hamburger() {
@@ -48,6 +55,14 @@ export default function Hamburger() {
         </div>
         <ul className="menu-links">
           {menuItems.map((item) => (
+            <li key={item} onClick={() => setMenuOpen(false)}>{item}</li>
+          ))}
+        </ul>
+        <button className="menu-voucher-btn" onClick={() => setMenuOpen(false)}>
+          Gift Vouchers
+        </button>
+        <ul className="menu-footer-links">
+          {footerLinks.map((item) => (
             <li key={item} onClick={() => setMenuOpen(false)}>{item}</li>
           ))}
         </ul>

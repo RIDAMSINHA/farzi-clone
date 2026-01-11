@@ -1,5 +1,4 @@
 import './Story.css';
-import Gallery from '../Gallery/Gallery';
 
 export default function Story() {
   return (
@@ -29,10 +28,6 @@ export default function Story() {
         </div>
 
         <div className="story-image"></div>
-      </div>
-
-      <div className="story-gallery">
-        <Gallery />
       </div>
     </section>
   );

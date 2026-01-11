@@ -5,6 +5,7 @@ import PrivateHire from "@/components/PrivateHire/PrivateHire";
 import Story from "@/components/Story/Story";
 import Newsletter from "@/components/Newsletter/Newsletter";
 import Footer from "@/components/Footer/Footer";
+import Gallery from "@/components/Gallery/Gallery";
 
 export default function Home() {
   return (
@@ -12,8 +13,9 @@ export default function Home() {
       <Hero />
       <Destinations />
       <About />
-      <PrivateHire/>
-      <Story/>
+      <PrivateHire />
+      <Story />
+      <Gallery />
       <Newsletter />
       <Footer />
     </>

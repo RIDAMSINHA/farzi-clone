@@ -45,8 +45,7 @@ export default function Footer() {
           <a>Delivery</a>
           <a>Philosophy</a>
           <a>Contact</a>
-        </div>
-      </div>
+        
 
       <div className="footer-bottom">
         <button className="btn-outline">Gift Vouchers</button>
@@ -54,6 +53,8 @@ export default function Footer() {
           <a>Privacy Policy</a>
           <a>Terms & Conditions</a>
         </div>
+      </div>
+      </div>
       </div>
     </footer>
   );

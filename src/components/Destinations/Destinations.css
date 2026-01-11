@@ -144,14 +144,15 @@
 }
 
 .destinations-image {
-  background: linear-gradient(135deg, #2c4a4a, #1a4040);
-  background-image: url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800');
+  /* background: linear-gradient(135deg, #2c4a4a, #1a4040); */
+  background-image: url('/images/Image2.png');
   background-size: cover;
   background-position: center;
   min-height: 150px;
   height: 66%;
   border-radius: 0;
   position: relative;
+  border: 3px solid #70644a;
 }
 
 .destinations-image::before {
