@@ -52,6 +52,32 @@
   background: #17c964;
   border-radius: 999px;
   display: inline-block;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+.status .dot.closed {
+  background: #6f6a5a; /* muted for closed */
+  animation: none;
+}
+
+.status.closed strong {
+  color: #c9a961; /* gold for closed message */
+}
+
+.status .opens-at {
+  color: #d9d1c0; /* light text for opening time */
+  margin-left: 0.5rem;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.1);
+  }
 }
 
 .muted {

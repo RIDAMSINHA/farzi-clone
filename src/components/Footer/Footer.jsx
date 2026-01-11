@@ -1,6 +1,12 @@
+"use client";
 import './Footer.css';
 
 export default function Footer() {
+  const now = new Date();
+  const hour = now.getHours(); // 0-23 local time
+  const isLondonOpen = hour >= 12; // opens at 12pm
+  const isBoxhallOpen = hour >= 11; // opens at 11am
+
   return (
     <footer className="footer">
       <div className="footer-grid">
@@ -8,8 +14,16 @@ export default function Footer() {
           <h3>Farzi London</h3>
           <p>8 Haymarket, London, SW1Y 4BP</p>
           <p>020 3981 0090</p>
-          <p className="status">
-            <span className="dot" aria-hidden="true" /> Open Now <span className="muted">until 10:45 pm</span>
+          <p className={`status ${isLondonOpen ? '' : 'closed'}`}>
+            {isLondonOpen ? (
+              <>
+                <span className="dot" aria-hidden="true" /> Open Now <span className="muted">until 10:45 pm</span>
+              </>
+            ) : (
+              <>
+                <strong>Sorry, we are closed</strong> <span className="opens-at">We open 12:00 pm</span>
+              </>
+            )}
           </p>
           <ul className="hours">
             <li><strong>Mon:</strong> Closed</li>
@@ -23,8 +37,16 @@ export default function Footer() {
         <div className="footer-column">
           <h3>Farzi @ Boxhall</h3>
           <p>11, The Arcade, Liverpool St, London EC2M 7PN</p>
-          <p className="status">
-            <span className="dot" aria-hidden="true" /> Open Now <span className="muted">until 9:00 pm</span>
+          <p className={`status ${isBoxhallOpen ? '' : 'closed'}`}>
+            {isBoxhallOpen ? (
+              <>
+                <span className="dot" aria-hidden="true" /> Open Now <span className="muted">until 9:00 pm</span>
+              </>
+            ) : (
+              <>
+                <strong>Sorry, we are closed</strong> <span className="opens-at">We open 11:00 am</span>
+              </>
+            )}
           </p>
           <ul className="hours">
             <li><strong>Mon - Tue:</strong> 11am - 8pm</li>
