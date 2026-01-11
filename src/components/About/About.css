@@ -53,10 +53,11 @@
 }
 
 .about-content p {
-  color: #b8b8b8;
+  color: #96948c;
   line-height: 1.9;
   font-size: 1rem;
   margin-bottom: 2.5rem;
+  letter-spacing: 0.04rem;
 }
 
 .about-buttons {
@@ -78,13 +79,16 @@
   background: #c9a961;
   border: 2px solid #c9a961;
   color: #1a1410;
+  padding: 1.0rem 1.2rem;
+  color: black;
+  font-size: 0.95rem;
 }
 
 .about-buttons button:hover {
   background: transparent;
   color: #c9a961;
   transform: scale(1.05);
-  box-shadow: inset 0 0 0 2px #c9a961;
+  /* box-shadow: inset 0 0 0 2px #c9a961; */
 }
 
 .about-image {

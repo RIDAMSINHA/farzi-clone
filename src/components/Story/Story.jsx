@@ -7,7 +7,7 @@ export default function Story() {
       <div className="story-container">
         <div className="story-content">
           <div className="section-title">Blending Tradition & Modernity</div>
-          <h2>The Farzi Story – Indian Dining with a Twist</h2>
+          <h2>The Farzi Story - Indian Dining with a Twist</h2>
           
           <p>
             Welcome to <strong>Farzi London</strong>, where modern Indian dining meets bold

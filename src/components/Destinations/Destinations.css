@@ -119,26 +119,28 @@
 }
 
 .destination-buttons button {
-  padding: 1.1rem 2.2rem;
+  padding: 1.0rem 1.2rem;
+  color: black;
+  font-size: 0.95rem;
+
   background: #c9a961;
   border: 2px solid #c9a961;
-  color: #1a3a3a;
   cursor: pointer;
-  font-size: 0.85rem;
   text-transform: capitalize;
   letter-spacing: 0.5px;
   font-weight: 700;
-  transition: all 0.3s ease;
-  border-radius: 0;
+  transition: all 0.4s ease;
+  border-radius: 2px;
   white-space: nowrap;
   font-family: "Outfit",sans-serif;
 }
 
 .destination-buttons button:hover {
-  background: #b39851;
-  border-color: #b39851;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 20px rgba(201, 169, 97, 0.4);
+  background: transparent;
+  /* border-color: #c9a961; */
+  color: #c9a961;
+  transform: scale(1.05);
+  /* box-shadow: inset 0 0 0 2px #c9a961; */
 }
 
 .destinations-image {
@@ -147,7 +149,7 @@
   background-size: cover;
   background-position: center;
   min-height: 150px;
-  height: 70%;
+  height: 66%;
   border-radius: 0;
   position: relative;
 }

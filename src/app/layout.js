@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import Hamburger from "@/components/Hamburger/Hamburger";
+import BottomNav from "@/components/BottomNav/BottomNav";
 import "./globals.css";
 
 
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Hamburger />
         {children}
+        <BottomNav />
       </body>
     </html>
   );

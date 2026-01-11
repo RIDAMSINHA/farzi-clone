@@ -56,6 +56,24 @@
   transform: translateY(-10px);
   transition: opacity 0.35s ease, transform 0.35s ease;
   z-index: 1000;
+  overflow-y: auto;
+}
+
+.menu-overlay::-webkit-scrollbar {
+  width: 8px;
+}
+
+.menu-overlay::-webkit-scrollbar-track {
+  background: rgba(201, 169, 97, 0.1);
+}
+
+.menu-overlay::-webkit-scrollbar-thumb {
+  background: #c9a961;
+  border-radius: 4px;
+}
+
+.menu-overlay::-webkit-scrollbar-thumb:hover {
+  background: #d9b971;
 }
 
 .menu-overlay.open {
